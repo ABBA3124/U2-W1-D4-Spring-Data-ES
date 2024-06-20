@@ -15,7 +15,6 @@ import lombok.ToString;
 @NoArgsConstructor
 @Getter
 @Setter
-@ToString
 public class Topping  extends Item{
 
 
@@ -27,4 +26,8 @@ public class Topping  extends Item{
         super(nome, prezzo, calorie);
     }
 
+    @Override
+    public String toString() {
+        return "🧂Topping🧂 --> " + super.toString();
+    }
 }

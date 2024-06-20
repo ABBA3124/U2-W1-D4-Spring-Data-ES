@@ -12,7 +12,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @Getter
 @Setter
-@ToString
+
 public class Drink extends Item{
 
 
@@ -20,4 +20,8 @@ public class Drink extends Item{
         super(nome, prezzo, calorie);
     }
 
+    @Override
+    public String toString() {
+        return "🍹Drink🍹 --> " + super.toString();
+    }
 }

@@ -16,7 +16,6 @@ import java.util.List;
 @NoArgsConstructor
 @Getter
 @Setter
-@ToString
 public class Pizza extends Item{
 
 //    @OneToMany(mappedBy = "pizza")
@@ -25,5 +24,10 @@ public class Pizza extends Item{
     public Pizza(String nome, double prezzo, int calorie) {
         super(nome, prezzo, calorie);
        // this.toppings = toppings;
+    }
+
+    @Override
+    public String toString() {
+        return "🍕Pizza🍕 --> " + super.toString();
     }
 }

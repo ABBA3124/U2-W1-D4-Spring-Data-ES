@@ -13,6 +13,7 @@ import java.util.UUID;
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 @NoArgsConstructor
+@Getter
 @ToString
 public abstract class Item {
     @Id
